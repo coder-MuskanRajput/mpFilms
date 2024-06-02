@@ -1,10 +1,12 @@
 import React from 'react'
 import Anim2 from './layouts/Anime2'
+import Nav from './layouts/navbar/Nav'
 
 const App = () => {
   return (
     <div>
-      <Anim2/>
+      <Nav/>
+      {/* <Anim2/> */}
     </div>
   )
 }

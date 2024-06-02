@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Anim.scss'
+import bgImg1 from "../assets/Sajish.jpeg"
+import bgimg2 from "../assets/Online24.jpeg"
+import bgimg3 from "../assets/LifeNavrangi.jpeg"
 
 const slides = [
     {
@@ -7,24 +10,25 @@ const slides = [
         headlineSecondLine: "Its slow",
         sublineFirstLine: "This is...",
         sublineSecondLine: "an example",
-        bgImg: "https://i0.wp.com/travelspan.in/wp-content/uploads/2020/05/DHOKRA-ART-3.jpg",
-        rectImg: "https://orchaa.wordpress.com/wp-content/uploads/2013/05/dokra1.jpg"
+        bgImg: bgImg1,
+        // rectImg: "https://orchaa.wordpress.com/wp-content/uploads/2013/05/dokra1.jpg"
     },
     {
         headlineFirstLine: "Try it out",
         headlineSecondLine: "Why not",
         sublineFirstLine: "This is...",
         sublineSecondLine: "an another example",
-        bgImg: "https://media.cntraveller.in/wp-content/uploads/2016/12/Featured-image3.jpg",
-        rectImg: "https://i.pinimg.com/550x/a9/b7/a1/a9b7a1b48104114cd42c82ee8474f603.jpg"
+        bgImg: bgimg2,
+        // rectImg: "https://i.pinimg.com/550x/a9/b7/a1/a9b7a1b48104114cd42c82ee8474f603.jpg"
     },
     {
         headlineFirstLine: "Let it be",
         headlineSecondLine: "Here",
         sublineFirstLine: "Min is...",
         sublineSecondLine: "Explore the world",
-        bgImg: "https://res.cloudinary.com/simplotel/image/upload/x_0,y_654,w_1181,h_662,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/neemrana-hotels/mandala-g5cf955f58_1920_zyyuoq",
-        rectImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4pY-XbT8bTCDmnn-DCkNtNZrda7FMiOVtSw&s"
+        bgImg: bgimg3,
+
+        // rectImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4pY-XbT8bTCDmnn-DCkNtNZrda7FMiOVtSw&s"
     },
     // Add more slides as needed
 ];
@@ -69,7 +73,7 @@ const Anim2 = () => {
                             <p>{slide.headlineSecondLine}</p>
                         </div>
                         <div className="slide-rect-filter">
-                            <div className="slide-rect" style={{ borderImageSource: `url(${slide.rectImg})` }}></div>
+                            {/* <div className="slide-rect" style={{ borderImageSource: `url(${slide.rectImg})` }}></div> */}
                         </div>
                         <div className="slide-content">
                             <h1 className="slide-content-text">

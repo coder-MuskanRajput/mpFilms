@@ -3,6 +3,7 @@ import { IonIcon } from '@ionic/react';
 import { menuOutline, closeOutline } from 'ionicons/icons';
 import logo from "../../assets/logo.png"
 import '@ionic/react/css/core.css';
+import "./Nav.scss"
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

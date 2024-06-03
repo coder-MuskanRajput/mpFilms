@@ -7,8 +7,9 @@ import Home from './pages/Home'
 const App = () => {
   return (
     <div>
-      
+      <div className='sticky w-full top-0 left-0 z-[999]'>
       <Nav/>
+      </div>
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>

@@ -4,6 +4,7 @@ import { menuOutline, closeOutline } from 'ionicons/icons';
 import logo from "../../assets/logo.png"
 import '@ionic/react/css/core.css';
 import "./Nav.scss"
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,11 +20,11 @@ const Nav = () => {
       </div>
       <nav className={`navbar absolute top-0 left-0 w-full h-full bg-black flex justify-center items-center transition-transform transform ${isNavOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:flex-row lg:translate-x-0`}>
         <ul className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
-          <li><a href="#" className="text-white text-xl lg:text-base uppercase">Home</a></li>
-          <li><a href="#" className="text-white text-xl lg:text-base uppercase">Services</a></li>
-          <li><a href="#" className="text-white text-xl lg:text-base uppercase">Projects</a></li>
-          <li><a href="#" className="text-white text-xl lg:text-base uppercase">About Us</a></li>
-          <li><a href="#" className="text-white text-xl lg:text-base uppercase">Contact</a></li>
+          <li><Link to="/" className="text-white text-xl lg:text-base uppercase">Home</Link></li>
+          <li><Link to="/services" className="text-white text-xl lg:text-base uppercase">Services</Link></li>
+          <li><Link to="/projects" className="text-white text-xl lg:text-base uppercase">Projects</Link></li>
+          <li><Link to="/about" className="text-white text-xl lg:text-base uppercase">About Us</Link></li>
+          <li><Link to="/contact" className="text-white text-xl lg:text-base uppercase">Contact</Link></li>
         </ul>
       </nav>
       <button onClick={toggleNavbar} className="lg:hidden z-50">

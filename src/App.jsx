@@ -1,12 +1,16 @@
 import React from 'react'
-import Anim2 from './layouts/Anime2'
+// import Anim2 from './layouts/Anime2'
 import Nav from './layouts/navbar/Nav'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <div>
       <Nav/>
-      <Anim2/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </div>
   )
 }

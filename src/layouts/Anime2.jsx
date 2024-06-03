@@ -6,24 +6,24 @@ import bgimg3 from "../assets/LifeNavrangi.jpeg"
 
 const slides = [
     {
-        headlineFirstLine: "SilenceTV",
-        headlineSecondLine: "Its slow",
+        headlineFirstLine: "Saajish ",
+        headlineSecondLine: "the Conspiracy",
         sublineFirstLine: "This is...",
         sublineSecondLine: "an example",
         bgImg: bgImg1,
         // rectImg: "https://orchaa.wordpress.com/wp-content/uploads/2013/05/dokra1.jpg"
     },
     {
-        headlineFirstLine: "Try it out",
-        headlineSecondLine: "Why not",
+        headlineFirstLine: "Online",
+        headlineSecondLine: "24x7",
         sublineFirstLine: "This is...",
         sublineSecondLine: "an another example",
         bgImg: bgimg2,
         // rectImg: "https://i.pinimg.com/550x/a9/b7/a1/a9b7a1b48104114cd42c82ee8474f603.jpg"
     },
     {
-        headlineFirstLine: "Let it be",
-        headlineSecondLine: "Here",
+        headlineFirstLine: "Life",
+        headlineSecondLine: "Navrangi",
         sublineFirstLine: "Min is...",
         sublineSecondLine: "Explore the world",
         bgImg: bgimg3,
@@ -64,12 +64,16 @@ const Anim2 = () => {
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className={`slide-wrapper ${index === currentSlide ? 'active' : ''}`}
+                    className={`slide-wrapper ${index === currentSlide ? 'active' : ''} g-blur`}
                     style={{ zIndex: slides.length - index, backgroundImage: `url(${slide.bgImg})` }}
+
                 >
-                    <div className="slide-inner">
-                        <div className="slide-bg-text">
-                            <p>{slide.headlineFirstLine}</p>
+                    <div className="slide-inner g-blur"
+                    style={{ zIndex: slides.length - index, backgroundImage: `url(${slide.bgImg})`, backgroundSize:'contain', backgroundPositionX:'80%', backgroundRepeat:'no-repeat' }}
+
+                    >
+                        <div className="slide-bg-text ">
+                            <p >{slide.headlineFirstLine}</p>
                             <p>{slide.headlineSecondLine}</p>
                         </div>
                         <div className="slide-rect-filter">
@@ -77,8 +81,8 @@ const Anim2 = () => {
                         </div>
                         <div className="slide-content">
                             <h1 className="slide-content-text">
-                                <p>{slide.headlineFirstLine}</p>
-                                <p>{slide.headlineSecondLine}</p>
+                                {/* <p>{slide.headlineFirstLine}</p> */}
+                                {/* <p>{slide.headlineSecondLine}</p> */}
                             </h1>
                             <a className="slide-content-cta">more...</a>
                         </div>

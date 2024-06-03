@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Anim.scss'
-import bgImg1 from "../assets/Sajish.jpeg"
-import bgimg2 from "../assets/Online24.jpeg"
-import bgimg3 from "../assets/LifeNavrangi.jpeg"
+import bgImg1 from "../../assets/Sajish.jpeg"
+import bgimg2 from "../../assets/Online24.jpeg"
+import bgimg3 from "../../assets/LifeNavrangi.jpeg"
+import { Link } from 'react-router-dom'
 
 const slides = [
     {
@@ -84,7 +85,7 @@ const Anim2 = () => {
                                 {/* <p>{slide.headlineFirstLine}</p> */}
                                 {/* <p>{slide.headlineSecondLine}</p> */}
                             </h1>
-                            <a className="slide-content-cta">more...</a>
+                            <Link to="/projects" className="slide-content-cta">more...</Link>
                         </div>
                         <h2 className="slide-side-text">
                             <span>{slide.sublineFirstLine} / </span>

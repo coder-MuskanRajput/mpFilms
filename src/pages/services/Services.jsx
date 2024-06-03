@@ -1,8 +1,11 @@
 import React from 'react'
+import Banner from '../../layouts/navbar/banner'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <Banner/>
+    </div>
   )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
+import Banner from '../../layouts/navbar/banner'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+
+      <Banner/>
+    </div>
   )
 }
 

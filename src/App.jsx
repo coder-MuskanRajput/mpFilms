@@ -7,7 +7,7 @@ import Contact from './pages/contact/Contact'
 import Services from './pages/services/Services'
 import Projects from './pages/projects/Projects'
 import About from './pages/about/About'
-import Footer from './layouts/navbar/Footer'
+import Footer from './layouts/common/Footer'
 
 const App = () => {
   return (

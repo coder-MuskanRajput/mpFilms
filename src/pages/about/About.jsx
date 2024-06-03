@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../../layouts/navbar/banner'
+import Banner from '../../layouts/common/Banner'
 
 const About = () => {
   return (

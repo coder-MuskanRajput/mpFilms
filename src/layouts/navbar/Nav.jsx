@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { menuOutline, closeOutline } from 'ionicons/icons';
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 import '@ionic/react/css/core.css';
-import "./Nav.scss"
+import "./Nav.scss";
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -14,11 +14,11 @@ const Nav = () => {
   };
 
   return (
-    <header className={`flex items-center h-20 w-full justify-between p-6 bg-black ${isNavOpen ? 'active' : ''}`}>
+    <header className="flex items-center h-20 w-full justify-between p-6 bg-black relative z-[999] lg:static">
       <div className="text-white text-2xl font-bold">
-         <img className='h-16' src={logo} alt="" />
+        <img className="h-16" src={logo} alt="Logo" />
       </div>
-      <nav className={`navbar absolute top-0 left-0 w-full h-full bg-black flex justify-center items-center transition-transform transform ${isNavOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:flex-row lg:translate-x-0`}>
+      <nav className={`navbar fixed top-0 left-0 w-full h-full bg-black flex justify-center items-center transition-transform transform ${isNavOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:flex lg:translate-x-0 lg:flex-row`}>
         <ul className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
           <li><Link to="/" className="text-white text-xl lg:text-base uppercase">Home</Link></li>
           <li><Link to="/services" className="text-white text-xl lg:text-base uppercase">Services</Link></li>

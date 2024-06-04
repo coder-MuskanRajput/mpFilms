@@ -1,0 +1,7 @@
+.grayscale {
+    filter: grayscale(100%);
+  }
+  .filter-none {
+    filter: none;
+  }
+  

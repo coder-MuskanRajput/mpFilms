@@ -77,9 +77,9 @@ const HeroPage = () => {
                     <button className='px-12 py-3 hover:bg-[#ED1C24] border border-[#dddddd64] rounded my-8 w-fit'>Contact Me</button>
                 </div>
             </div>
-            <div className='md:w-1/2 h-full flex flex-col items-end gap-5 justify-center p-6'>
-                <div onClick={changeUp} className='p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square flex items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-up-s-line'></i></div>
-                <div onClick={changeDown} className='p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square flex items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-down-s-line'></i></div>
+            <div hidden className='md:w-1/2 h-full flex flex-col items-end gap-5 justify-center p-6 '>
+                <div onClick={changeUp} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-up-s-line'></i></div>
+                <div onClick={changeDown} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-down-s-line'></i></div>
             </div>
         </div>
         </div>

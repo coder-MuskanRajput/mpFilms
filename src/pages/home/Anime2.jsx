@@ -1,40 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Anim.scss'
-import bgImg1 from "../../assets/Sajish.jpeg"
-import bgimg2 from "../../assets/Online24.jpeg"
-import bgimg3 from "../../assets/LifeNavrangi.jpeg"
+
 import { Link } from 'react-router-dom'
 
-const slides = [
-    {
-        headlineFirstLine: "Saajish ",
-        headlineSecondLine: "the Conspiracy",
-        sublineFirstLine: "This is...",
-        sublineSecondLine: "an example",
-        bgImg: bgImg1,
-        // rectImg: "https://orchaa.wordpress.com/wp-content/uploads/2013/05/dokra1.jpg"
-    },
-    {
-        headlineFirstLine: "Online",
-        headlineSecondLine: "24x7",
-        sublineFirstLine: "This is...",
-        sublineSecondLine: "an another example",
-        bgImg: bgimg2,
-        // rectImg: "https://i.pinimg.com/550x/a9/b7/a1/a9b7a1b48104114cd42c82ee8474f603.jpg"
-    },
-    {
-        headlineFirstLine: "Life",
-        headlineSecondLine: "Navrangi",
-        sublineFirstLine: "Min is...",
-        sublineSecondLine: "Explore the world",
-        bgImg: bgimg3,
-
-        // rectImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4pY-XbT8bTCDmnn-DCkNtNZrda7FMiOVtSw&s"
-    },
-    // Add more slides as needed
-];
-
-const Anim2 = () => {
+const Anim2 = ({slides}) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isPreviousSlide, setIsPreviousSlide] = useState(false);
     const [isFirstLoad, setIsFirstLoad] = useState(true);

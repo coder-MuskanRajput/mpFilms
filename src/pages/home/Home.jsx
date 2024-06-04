@@ -1,9 +1,13 @@
 import React from 'react'
 import Anim2 from './Anime2'
+import HeroPage from './HeroPage'
 
-const Home = () => {
+const Home = ({slides}) => {
   return (
-      <Anim2/>  
+    <>
+    <HeroPage/>
+      <Anim2 slides={slides}/>  
+    </>
   )
 }
 

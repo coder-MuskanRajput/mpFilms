@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const HeroPage = () => {
     const ourEmplyee = [
         {
-            work: "I'M Script Writer",
-            Name1: 'RUSSO',
-            Name2: 'BROTHERS',
+            work: "I'M Line Producer",
+            Name1: 'Sachin',
+            Name2: 'Sharma',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas asperiores obcaecati culpa, ratione cumque temporibu.',
             img: 'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'
         },
@@ -74,7 +75,7 @@ const HeroPage = () => {
                             <p className='text-lg tracking-wide text-gray-400 w-[80%]'>{ourEmplyee[isOpen].description}</p>
                         </motion.div>
                     </AnimatePresence>
-                    <button className='px-12 py-3 hover:bg-[#ED1C24] border border-[#dddddd64] rounded my-8 w-fit'>Contact Me</button>
+                    <Link to="/contact" className='px-12 py-3 hover:bg-[#ED1C24] border border-[#dddddd64] rounded my-8 w-fit'>Contact Me</Link>
                 </div>
             </div>
             <div hidden className='md:w-1/2 h-full flex flex-col items-end gap-5 justify-center p-6 '>

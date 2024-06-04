@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -12,19 +12,12 @@ const HeroPage = () => {
             img: 'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'
         },
         {
-            work: "I'M Film director",
-            Name1: 'David',
-            Name2: 'Anderson',
-            description: 'Amet consectetur adipisicing elit. Voluptas asperiores obcaecati culpa, ratione cumque temporibu. Lorem ipsum dolor sit.',
-            img: 'https://faime-next.vercel.app/_next/static/media/director1.dcc77ec8.jpg'
-        },
-        {
-            work: "I'M Video Editor",
-            Name1: 'David',
-            Name2: 'Jhonson',
-            description: 'Lorem ipsum dolor sit amet consectetur, ratione cumque temporibu. adipisicing elit. Voluptas asperiores obcaecati culpa',
-            img: 'https://faime-next.vercel.app/_next/static/media/director.a4fa1526.jpg'
-        },
+            work: "I'M Line Producer",
+            Name1: 'Sachin',
+            Name2: 'Sharma',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas asperiores obcaecati culpa, ratione cumque temporibu.',
+            img: 'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'
+        }
     ];
 
     const [isOpen, setIsOpen] = useState(0);
@@ -36,6 +29,15 @@ const HeroPage = () => {
     const changeDown = () => {
         setIsOpen(prev => (prev === ourEmplyee.length - 1 ? 0 : prev + 1));
     };
+
+    useEffect(() => {
+      changeUp()
+    
+      return () => {
+        
+      }
+    }, [])
+    
 
     return (
         <div className='relative bg-black w-full min-h-screen'>

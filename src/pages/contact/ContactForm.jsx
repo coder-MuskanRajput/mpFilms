@@ -68,7 +68,7 @@ const ContactForm = () => {
                                         <textarea placeholder="Write Your Message" name="message" className="w-full p-3 bg-gray-100 border border-gray-200 rounded h-28"></textarea>
                                     </div>
                                     <div className="w-full px-2 text-center">
-                                        <input type="submit" value="Send Now" className="bg-transparent border text-black border-black text-white font-semibold py-3 px-6 rounded hover:border-0 hover:text-white hover:bg-[#ED1C24] transition duration-300"/>
+                                        <input type="submit" value="Send Now" className="bg-transparent border text-black border-black  font-semibold py-3 px-6 rounded hover:border-0 hover:text-white hover:bg-[#ED1C24] transition duration-300"/>
                                     </div>
                                 </div>
                             </form>

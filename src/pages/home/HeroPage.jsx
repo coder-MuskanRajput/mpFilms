@@ -8,14 +8,14 @@ const HeroPage = () => {
             work: "I'M Line Producer",
             Name1: 'Sachin',
             Name2: 'Sharma',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas asperiores obcaecati culpa, ratione cumque temporibu.',
+            description: "As a line producer, I streamline the producer's and director's vision into seamless reality, crafting innovative solutions that turn hard work into effortless brilliance.",
             img: 'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'
         },
         {
             work: "I'M Line Producer",
             Name1: 'Sachin',
             Name2: 'Sharma',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas asperiores obcaecati culpa, ratione cumque temporibu.',
+            description: "As a line producer, I streamline the producer's and director's vision into seamless reality, crafting innovative solutions that turn hard work into effortless brilliance.",
             img: 'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'
         }
     ];
@@ -80,9 +80,9 @@ const HeroPage = () => {
                     <Link to="/contact" className='px-12 py-3 hover:bg-[#ED1C24] border border-[#dddddd64] rounded my-8 w-fit'>Contact Me</Link>
                 </div>
             </div>
-            <div hidden className='md:w-1/2 h-full flex flex-col items-end gap-5 justify-center p-6 '>
-                <div onClick={changeUp} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-up-s-line'></i></div>
-                <div onClick={changeDown} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-down-s-line'></i></div>
+            <div className='md:w-1/2 h-full flex flex-col items-end gap-5 justify-center p-6 '>
+                {/* <div onClick={changeUp} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-up-s-line'></i></div> */}
+                {/* <div onClick={changeDown} className='hidden p-1 px-2 active:scale-95 text-xl font-bold hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-arrow-down-s-line'></i></div> */}
             </div>
         </div>
         </div>

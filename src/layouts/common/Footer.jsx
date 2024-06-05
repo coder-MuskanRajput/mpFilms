@@ -13,9 +13,19 @@ const Footer = () => {
   const imgArray = [jnu, janni, ek, kayamat, sajish, life];
 
   const [isItemOpen, setIsItemOpen] = useState(false);
-  const openLightBox = (item)=>{
-    setIsItemOpen(item)
-  }
+  const [isIndexNumber, setIsIndexNumber] = useState(0)
+  const openLightBox = (i)=>{
+    setIsIndexNumber(i)
+    setIsItemOpen(true);
+  };
+
+  const changeUp = () => {
+    setIsIndexNumber(prev => (prev === 0 ? imgArray.length - 1 : prev - 1));
+};
+
+const changeDown = () => {
+    setIsIndexNumber(prev => (prev === imgArray.length - 1 ? 0 : prev + 1));
+};
 
   return (
     <>
@@ -50,7 +60,7 @@ const Footer = () => {
             <h2 className="text-lg font-bold mb-2">Our Gallery</h2>
             <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               {imgArray.map((item, ind) => (
-                <img key={ind} className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover cursor-pointer" src={item} alt="item" onClick={() => openLightBox(item)} />
+                <img key={ind} className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-cover cursor-pointer" src={item} alt="item" onClick={() => openLightBox(ind)} />
               ))}
               
             </div>
@@ -76,8 +86,16 @@ const Footer = () => {
         <hr className="border-white" />
         <p className="text-center relative pb-10 text-white mt-10">© 2024 <span className='text-[#ED1C24]'>MpFilms</span> All rights reserved.</p>
       </div>
-      {false && <>
-              <div className='fixed top-0 left-0 g-blur w-full h-screen z-50'></div>
+      {isItemOpen && <>
+              <div className='fixed top-0 left-0 g-blur w-full h-screen z-50 flex items-center'>
+                <div onClick={()=>setIsItemOpen(false)} className='absolute top-28 right-8 px-4 py-3 cursor-pointer active:scale-95 aspect-square w-fit border border-[#dddddd5d] rounded-full hover:bg-red-500 text-white'><i className='ri-close-line'></i></div>
+                <div className='flex justify-between gap-3 p-5 items-center w-full'>
+                <div onClick={changeDown} className='px-4 py-3 cursor-pointer active:scale-95 aspect-square w-fit border border-[#dddddd5d] rounded-full hover:bg-red-500 text-white'><i className='ri-arrow-left-line'></i></div>
+                <img className='max-w-60' src={imgArray[isIndexNumber]} alt="" />
+                <div onClick={changeUp} className='px-4 py-3 cursor-pointer active:scale-95 aspect-square w-fit border border-[#dddddd5d] rounded-full hover:bg-red-500 text-white'><i className='ri-arrow-right-line'></i></div>
+
+                </div>
+              </div>
               </>}
     </>
   );

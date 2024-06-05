@@ -30,7 +30,9 @@ const Footer = () => {
               Get In Touch
             </h2>
           </div>
-          <Link to="/contact" className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center border-2 border-white transition-all duration-300 hover:bg-[#ED1C24] hover:border-transparent">
+          <Link onClick={()=>{
+            window.scrollTo(0,0)
+          }} to="/contact" className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full flex items-center justify-center border-2 border-white transition-all duration-300 hover:bg-[#ED1C24] hover:border-transparent">
             <i className="text-white text-2xl ri-arrow-right-up-line transition-transform duration-300 hover:translate-x-2 hover:translate-y-[-2px]"></i>
           </Link>
         </div>

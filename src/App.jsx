@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import Anim2 from './layouts/Anime2'
 import Nav from './layouts/navbar/Nav'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Contact from './pages/contact/Contact'
 import Services from './pages/services/Services'
@@ -42,6 +42,17 @@ const slides = [
   },
   // Add more slides as needed
 ];
+
+const location = useLocation();
+
+useEffect(() => {
+  window.scrollTo(0,0)
+
+  return () => {
+    
+  }
+}, [location.pathname])
+
 
   return (
     <>

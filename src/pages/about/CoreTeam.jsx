@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 const CoreTeam = () => {
   const boxVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
+    hover: { scale: 1.02, boxShadow: '0px 10px 30px rgba(0,0,0,0.2)' }
   };
 
   const teamMembers = [
@@ -37,7 +38,7 @@ const CoreTeam = () => {
           How our core team works?
         </motion.div>
         <motion.div
-          className="text-lg text-center text-white mb-8"
+          className="text-lg text-center text-gray-300 mb-8 w-4/5 "
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -50,11 +51,12 @@ const CoreTeam = () => {
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-gray-300 p-6 rounded-lg shadow-md cursor-pointer"
               variants={boxVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover="hover"
+              transition={{ duration: 0.2 }}
             >
               <h2 className="text-xl font-bold mb-2">{member.heading}</h2>
               <p className="text-gray-700">

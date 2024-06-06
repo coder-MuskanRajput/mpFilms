@@ -25,18 +25,21 @@ const ServiceProvider = () => {
     <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center p-5">
       <h1 className="text-4xl text-center text-white mb-10">We offer Line Production Services for all Projects</h1>
       <div className="flex flex-wrap justify-center gap-4">
+        
         {buttonTexts.map((text, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.9 }}
-            className="gradient-border"
+            className="gr-btn-wrapper border border-[#aaaaaa88] rounded-full"
           >
-            <div className="gradient-border-content text-white py-2 px-4">
+            <div className="gr-btn ">
               {text}
             </div>
+            <div class="gr-btn-bg"></div>
           </motion.div>
         ))}
+        
       </div>
     </div>
   );

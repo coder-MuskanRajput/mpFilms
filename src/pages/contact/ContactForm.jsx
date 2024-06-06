@@ -24,7 +24,7 @@ const ContactForm = () => {
 
         if (name && email && phone.length === 10) {
             if (window.confirm('Please check the data once again before submission. If cross checked, please press "OK"')) {
-                const scriptURL = "your script url";
+                const scriptURL = "https://script.google.com/macros/s/AKfycbw-NQkz3wuleRTTZWV003BbsGM76uVUbZhd6Ts4_NUoU2ZaHWdW0Mx38cCGgUcbbCU/exec";
                 try {
                     const form = new FormData();
                     for (const key in formData) {

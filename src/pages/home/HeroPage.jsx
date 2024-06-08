@@ -45,8 +45,8 @@ const HeroPage = () => {
         <div style={{background:`url{'https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg'}`, backgroundSize:'contain', backgroundPositionX:'center', backgroundPositionY:'center'}} className={`w-full bgContain bg-[url('https://faime-next.vercel.app/_next/static/media/director2.ae539b43.jpg')] absolute top-0 left-0 text-white p-5 min-h-screen flex md:flex-row flex-col items-center justify-center bg-cover bg-no-repeat`}>
             
             <div className='flex gap-5 md:w-1/2 '>
-                <div className='flex flex-col items-center justify-center w-fit gap-3'>
-                    <p className='flex flex-col items-center w-fit justify-center text-[10px]'>
+                <div className='flex flex-col items-center justify-center w-fit gap-3 md:block hidden'>
+                    <p className='flex p-3 flex-col items-center w-fit justify-center text-[10px]'>
                         <span>F</span>
                         <span>O</span>
                         <span>L</span>
@@ -54,7 +54,7 @@ const HeroPage = () => {
                         <span>O</span>
                         <span>W</span>
                     </p>
-                    <div className='w-[1px] h-5 bg-[#dddddd64]'></div>
+                    <div className='w-[1px] ml-4 h-5 bg-[#dddddd64]'></div>
                     <div className='flex flex-col gap-3'>
                         <div className='p-1 hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square flex items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-facebook-fill'></i></div>
                         <div className='p-1 hover:bg-[#ED1C24] cursor-pointer text-white w-fit aspect-square flex items-center justify-center rounded-full border border-[#dddddd64]'><i className='ri-twitter-fill'></i></div>

@@ -23,7 +23,7 @@ const ServiceProvider = () => {
 
   return (
     <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center p-5">
-      <h1 className="text-4xl text-center text-white mb-10">We offer Line Production Services for all Projects</h1>
+      <h1 className="text-4xl text-center  text-white mb-20">We offer Line Production Services for all Projects</h1>
       <div className="flex flex-wrap justify-center gap-4">
         
         {buttonTexts.map((text, index) => (
@@ -36,7 +36,7 @@ const ServiceProvider = () => {
             <div className="gr-btn ">
               {text}
             </div>
-            <div class="gr-btn-bg"></div>
+            <div className="gr-btn-bg"></div>
           </motion.div>
         ))}
         

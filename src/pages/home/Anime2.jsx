@@ -11,7 +11,7 @@ const Anim2 = ({slides}) => {
     useEffect(() => {
         const firstLoadTimer = setTimeout(() => {
             setIsFirstLoad(false);
-        }, 3000); // Adjust the time as needed
+        }, 2000); // Adjust the time as needed
 
         return () => clearTimeout(firstLoadTimer);
     }, []);

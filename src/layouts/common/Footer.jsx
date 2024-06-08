@@ -29,7 +29,7 @@ const changeDown = () => {
 
   return (
     <>
-      <footer className="bg-[#171717] p-6 sm:p-12 lg:p-24">
+      <footer className="bg-[#171717] relative  p-6 sm:p-12 lg:p-24">
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
           <div className="text-center sm:text-left">
             <span className="block text-[#ED1C24] text-lg mb-5 sm:text-xl">GET IN TOUCH</span>

@@ -1,0 +1,44 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  padding : 30px;
+  justify-content: center;
+}
+
+.carousel-inner {
+  display: flex;
+  gap: 30px;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.client-icon {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  object-fit: contain;
+}
+
+.client-name {
+  display: block;
+  margin-top: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

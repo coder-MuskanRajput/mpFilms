@@ -56,7 +56,7 @@ const changeDown = () => {
               I can film your project whether it is a commercial advertisement, a short film, or a documentary film.
             </h2>
           </div>
-          <div className="relative w-full sm:w-1/2 flex flex-col items-center sm:items-start">
+          {/* <div className="relative w-full sm:w-1/2 flex flex-col items-center sm:items-start">
             <h2 className="text-lg font-bold mb-2">Our Gallery</h2>
             <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               {imgArray.map((item, ind) => (
@@ -64,7 +64,7 @@ const changeDown = () => {
               ))}
               
             </div>
-          </div>
+          </div> */}
           <div className="relative flex flex-col w-full sm:w-1/4 items-center sm:items-start">
             <h2 className="text-lg font-bold mb-2">Follow Me</h2>
             <p className="text-sm sm:text-base">Connect with me on social media</p>

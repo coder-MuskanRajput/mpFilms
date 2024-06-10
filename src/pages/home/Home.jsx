@@ -1,11 +1,12 @@
 import React from 'react'
 import Anim2 from './Anime2'
 import HeroPage from './HeroPage'
-import Feedback from './Feedback'
+// import Feedback from './Feedback'
 import AboutMe from './AboutMe'
 import AboutMpFilms from '../about/AboutMpFilms'
 import WhyChooseUs from '../about/WhyChooseUs'
 import DudeAnimation from './DudeAnimation'
+import Slider from './Slider'
 // import MeetMyTeam from '../../layouts/common/MeetMyTeam'
 
 const Home = ({slides}) => {
@@ -19,7 +20,7 @@ const Home = ({slides}) => {
       <WhyChooseUs/>
 
       {/* <MeetMyTeam/>  */}
-      <Feedback/>
+      <Slider/>
     </>
   )
 }

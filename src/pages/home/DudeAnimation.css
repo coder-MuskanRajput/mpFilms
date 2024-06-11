@@ -40,8 +40,24 @@ svg {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+ }
+/* .first{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://m.media-amazon.com/images/I/91TtGGA+AeL.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.mp {
+    font-size: 100px;
+    font-weight: bold;
+    background: url('https://images.picxy.com/cache/2020/12/21/5aae85ab3052f947af49ad965ca7a2c9.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
-
 .content-section:nth-child(1) {
     background-color: #171717;
 }

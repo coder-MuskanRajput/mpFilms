@@ -266,10 +266,13 @@ const DudeAnimation = () => {
     return (
         <div className="page">
             <div className="content">
-                <div className="content-section">
+            {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+
+                <div className="content-section first">
+
                     <div>
-                        <h1 className="text-9xl text-white">MP FILMS</h1>
-                        <p className="arrow-animated text-white">↓</p>
+                        <h1 className=" mp text-9xl z-10 text-white">MP FILMS</h1>
+                        <p className="arrow-animated z-10 text-white">↓</p>
                     </div>
                 </div>
                 <div className="content-section">

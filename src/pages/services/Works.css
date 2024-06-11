@@ -1,7 +1,8 @@
 #container {
-    width: 980px;
     margin: 0 auto;
-
+   width: 100%;
+   max-width:1200px;
+   padding: 20px;
   }
   
   .left { float: left; }
@@ -11,7 +12,6 @@
   figure { width: 100%; cursor: pointer; }
   img { width: 60%; margin: 0 auto; transform: perspective(1000px); transition: transform 0.3s; }
   img:hover { transform: perspective(1000px) rotateY(0deg) scale(1.1); }
-  /* h1 { font-size: 3.5em; font-weight: bold; color: #007bff; } */
   p { font-size: 1em; }
   
   .full { 
@@ -19,7 +19,12 @@
     display: table;
     padding: 50px 0;
   }
+  .half{
+    flex: 1;
+  position: relative;
+  min-width: 300px; 
   
+}
   .half:before, .half:after {
     content: " ";
     display: table;
@@ -54,8 +59,9 @@
   
   .gallery-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
   }
   
   .gallery-image {
@@ -63,7 +69,7 @@
     max-height: 80vh;
   }
   
-  .close-button,
+   .close-button,
   .prev-button,
   .next-button {
     position: absolute;
@@ -73,72 +79,57 @@
     font-size: 2rem;
     cursor: pointer;
     padding: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
+  
   .close-button {
-    top: 1rem;
-    right: 1rem;
+    top: 10px;
+    right: 10px;
+    transform: none;
   }
   
   .prev-button {
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 10px;
   }
   
   .next-button {
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 10px;
   }
-  .gallery-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+
+
+@media (max-width: 768px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+  .full{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    flex-wrap: wrap;
   }
-  
+  .half {
+    flex: 1 1 100%;
+  }
+
+  .p-10 {
+    padding: 10px 5px;
+  }
+
   .gallery-container {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    width: 95%;
   }
-  
-  .close-button,
-  .prev-button,
-  .next-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .text-2xl {
+    font-size: 1rem;
   }
-  
-  .close-button {
-    top: 1rem;
-    right: 1rem;
-    font-size: 2.5rem;
+
+  .p-10 {
+    padding: 5px;
   }
-  
-  .prev-button {
-    left: 1rem;
+
+  .gallery-container {
+    width: 100%;
   }
-  
-  .next-button {
-    right: 1rem;
-  }
-  
-  .gallery-image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
+}

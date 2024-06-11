@@ -17,7 +17,7 @@ const Nav = () => {
   const location = useLocation()
 
   return (
-    <header className="flex items-center h-20 w-full justify-between p-6 bg-[#171717] relative z-[999] lg:static">
+    <header className="flex items-center h-20 w-full justify-between p-6 bg-[#171717]  relative z-[999] lg:static">
       <div className="text-white text-2xl font-bold">
         <img className="h-16 w-44" src={logo} alt="Logo" />
       </div>

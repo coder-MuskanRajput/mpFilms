@@ -11,6 +11,8 @@ import Footer from './layouts/common/Footer'
 import bgImg1 from "./assets/Sajish.jpeg"
 import bgimg2 from "./assets/Online24.jpeg"
 import bgimg3 from "./assets/LifeNavrangi.jpeg"
+import HeroPage from './pages/hero/HeroPage'
+import TrailImages from './pages/anim/ImageTrail'
 
 const App = () => {
   
@@ -59,6 +61,8 @@ useEffect(() => {
       <div className='sticky w-full top-0 left-0 z-[999]'>
       <Nav/>
       </div>
+      <HeroPage/>
+      <TrailImages/>
       <Routes>
         <Route path='/' element={<Home slides={slides} />}/>
         <Route path='/services' element={<Services/>}/>

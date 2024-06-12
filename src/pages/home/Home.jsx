@@ -7,6 +7,7 @@ import AboutMpFilms from '../about/AboutMpFilms'
 import WhyChooseUs from '../about/WhyChooseUs'
 import DudeAnimation from './DudeAnimation'
 import Slider from './Slider'
+import TrailImages from '../anim/ImageTrail'
 // import MeetMyTeam from '../../layouts/common/MeetMyTeam'
 
 const Home = ({slides}) => {
@@ -14,6 +15,9 @@ const Home = ({slides}) => {
     <>
     {/* <HeroPage/> */}
     {/* <AboutMe/> */}
+    {/* <HeroPage/> */}
+      <TrailImages/>
+      
     <DudeAnimation/>
       <Anim2 slides={slides}/> 
       <AboutMpFilms/>

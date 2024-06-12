@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 
-export const TextParallaxContentExample = () => {
+const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
@@ -131,3 +131,5 @@ const ExampleContent = () => (
     </div>
   </div>
 );
+
+export default  TextParallaxContentExample;

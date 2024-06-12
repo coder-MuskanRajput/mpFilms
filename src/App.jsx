@@ -61,8 +61,6 @@ useEffect(() => {
       <div className='sticky w-full top-0 left-0 z-[999]'>
       <Nav/>
       </div>
-      <HeroPage/>
-      <TrailImages/>
       <Routes>
         <Route path='/' element={<Home slides={slides} />}/>
         <Route path='/services' element={<Services/>}/>

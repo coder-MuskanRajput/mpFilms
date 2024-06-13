@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Works.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import "animate.css/animate.compat.css"
 
 import location from "../../assets/location.png";
 import crew from "../../assets/crew.png";
@@ -45,6 +46,7 @@ import man2 from "../../assets/man2.jpg"
 import man3 from "../../assets/man3.jpg"
 import man4 from "../../assets/man4.jpg"
 import man5 from "../../assets/man5.JPG"
+import ScrollAnimation from 'react-animate-on-scroll';
 // import catering1 from "../../assets/catering1.JPG"
 // import catering2 from "../../assets/catering2.JPG"
 // import catering3 from "../../assets/catering3.JPG"
@@ -168,96 +170,147 @@ const Works = () => {
   };
 
   return (
-    <div className='bg-gray-300'>
+    <div className='bg-gray-300 overflow-x-hidden'>
       <div id="container">
         <header className="full">
+        <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half p-10 bg-[#3c3c3c] left parallax" ref={el => animationElements.current[0] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>LOCATION SCOUTING SERVICE</h1>
             <p className='text-white'>We have expert location scouts in every region of MP, to help overcome administrative, linguistic and cultural barriers and ensure smooth sailing for your filming projects.</p>
           </section>
+        </ScrollAnimation>
+        <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
           <section className="half right">
             <figure className="parallax" ref={el => animationElements.current[0] = el} onClick={() => openGallery(0)}>
               <img src={location} alt="Location Scouting" />
             </figure>
           </section>
+        </ScrollAnimation>
         </header>
         <section className="full">
+        <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
           <section className="half p-10 bg-[#3c3c3c] right parallax" ref={el => animationElements.current[1] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>FILMING PERMISSIONS</h1>
             <p className='text-white'>Our film fixers work with state, city and local administrations, helping you avoid a ton of complicated paperwork for securing filming permissions.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half left">
             <figure className="parallax" ref={el => animationElements.current[1] = el} onClick={() => openGallery(1)}>
               <img src={filming} alt="Filming Permissions" />
             </figure>
           </section>
+          </ScrollAnimation>
         </section>
         <footer className="full">
+        <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half left p-10 bg-[#3c3c3c] parallax" ref={el => animationElements.current[2] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>TRAVEL , BOARDING & LODGING</h1>
             <p className='text-white'>Worried about your travel , stay , F&B while you were here? Just leave it on us!!! We will give you the best options for your TBL that comes under your budgets.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
           <section className="half right">
             <figure className="parallax" ref={el => animationElements.current[2] = el} onClick={() => openGallery(2)}>
               <img src="https://static.thenounproject.com/png/1761355-200.png" alt="Travel, Boarding & Lodging" />
             </figure>
           </section>
+          </ScrollAnimation>
         </footer>
         <section className="full">
+        <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
           <section className="half p-10 bg-[#3c3c3c] right parallax" ref={el => animationElements.current[3] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>FILMING CREW</h1>
             <p className='text-white'>We have a strong working relationship with the best filming crews in MP.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half left">
             <figure className="parallax" ref={el => animationElements.current[3] = el} onClick={() => openGallery(3)}>
               
               <img src={crew} alt="Filming Crew" />
             </figure>
           </section>
+          </ScrollAnimation>
         </section>
         <footer className="full">
+        <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half p-10 bg-[#3c3c3c] left parallax" ref={el => animationElements.current[4] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>EQUIPMENT RENTALS</h1>
             <p className='text-white'>Whether you need a single piece of shooting equipment or an entire kit for your filming project in Madhya Pradesh, our film fixers connect with the best rental houses for procuring state-of-the-art equipment.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
+
           <section className="half right">
             <figure className="parallax" ref={el => animationElements.current[4] = el} onClick={() => openGallery(4)}>
               <img src={rentals} alt="Equipment Rentals" />
             </figure>
           </section>
+          </ScrollAnimation>
         </footer>
         <section className="full">
+        <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
           <section className="half p-10 bg-[#3c3c3c] right parallax" ref={el => animationElements.current[5] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>CASTING</h1>
             <p className='text-white'>We have our In-house casting director who will get you the best talented artists, models, junior artists, etc. as per the script and creative requirement.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half left">
             <figure className="parallax" ref={el => animationElements.current[5] = el} onClick={() => openGallery(5)}>
               <img src={casting} alt="Casting" />
             </figure>
           </section>
+          </ScrollAnimation>
         </section>
         <footer className="full">
+        <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half p-10 bg-[#3c3c3c] left parallax" ref={el => animationElements.current[6] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>MANPOWER</h1>
             <p className='text-white'>Skilled workers managing and operating machinery, ensuring quality control, maintaining production flow, and optimizing efficiency to meet production targets and deadlines effectively.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
+
           <section className="half right">
             <figure className="parallax" ref={el => animationElements.current[6] = el} onClick={() => openGallery(6)}>
               <img src={manpower} alt="Manpower" />
             </figure>
           </section>
+          </ScrollAnimation>
         </footer>
         <section className="full">
+        <ScrollAnimation animateOut='bounceOutRight'
+          animateIn='bounceInRight'>
+
           <section className="half p-10 bg-[#3c3c3c] right parallax" ref={el => animationElements.current[7] = el}>
             <h1 className='text-2xl text-white font-bold mb-6'>CATERING</h1>
             <p className='text-white'>Catering services provide meal preparation, delivery, and presentation for events, including menu planning, cooking, serving staff, setup and cleanup, tableware, and sometimes event coordination to ensure a seamless dining experience.</p>
           </section>
+          </ScrollAnimation>
+          <ScrollAnimation animateOut='bounceOutLeft'
+          animateIn='bounceInLeft'> 
           <section className="half left">
             <figure className="parallax" ref={el => animationElements.current[7] = el} onClick={() => openGallery(7)}>
               <img src={catering} alt="Catering" />
             </figure>
           </section>
+          </ScrollAnimation>
         </section>
         
         {galleryOpen && (

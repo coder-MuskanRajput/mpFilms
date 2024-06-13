@@ -75,7 +75,15 @@ const useGSAP = () => {
             <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Screen-Shot-2020-01-14-at-6.04.40-PM.png" className='dot max-w-56 object-cover rounded-2xl' alt="" />
         </div>
         <div  className="w-full h-full g2-blur absolute top-0 left-0 flex flex-col items-center justify-center">
-            <h1 className="sm:text-9xl text-7xl text-white font-bold text-center"><span className="text-red-600">MP</span> <span className="text-blue-500">FILMS</span></h1>
+            <h1 className="sm:text-9xl text-7xl text-white font-bold text-center"><span className="text-red-600">{'MP'.split("").map((child, idx) => (
+        <span className='hoverText' key={idx}>
+          {child}
+        </span>
+      ))}</span> <span className="text-blue-500">{'FILMS'.split("").map((child, idx) => (
+        <span className='hoverText' key={idx}>
+          {child}
+        </span>
+      ))}</span></h1>
             <p className="text-white opacity-75 text-xl text-center">Lorem ipsum dolor sit amet consectetur </p>
         </div>
     </div>

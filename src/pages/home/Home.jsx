@@ -8,6 +8,7 @@ import WhyChooseUs from '../about/WhyChooseUs'
 import DudeAnimation from './DudeAnimation'
 import Slider from './Slider'
 import TrailImages from '../anim/ImageTrail'
+import HeroPageNew from '../hero/HeroPageNew'
 // import MeetMyTeam from '../../layouts/common/MeetMyTeam'
 
 const Home = ({slides}) => {
@@ -15,9 +16,9 @@ const Home = ({slides}) => {
     <>
     {/* <HeroPage/> */}
     {/* <AboutMe/> */}
-    {/* <HeroPage/> */}
-      <TrailImages/>
+      {/* <TrailImages/> */}
       
+    <HeroPageNew/>
     <DudeAnimation/>
       <Anim2 slides={slides}/> 
       <AboutMpFilms/>

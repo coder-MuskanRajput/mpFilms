@@ -258,7 +258,7 @@ const DudeAnimation = () => {
         });
         gsap.timeline({}).to(window, {
             duration: 1,
-            scrollTo: { y: 0.3 * window.innerHeight },
+            // scrollTo: { y: 0.3 * window.innerHeight },
             ease: "power1.inOut",
         });
     }, []);
@@ -267,7 +267,6 @@ const DudeAnimation = () => {
         <div className="page">
             <div className="content">
             {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
-
                 <div className="content-section first">
 
                     <div>

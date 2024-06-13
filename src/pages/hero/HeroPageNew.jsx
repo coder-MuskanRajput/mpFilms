@@ -1,11 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-const HeroPage = () => {
+const HeroPageNew = () => {
   return (
     <div>
-      <div className="relative overflow-hidden">
-        <section className="h-screen bg-slate-200">
+      <div className="relative overflow-hidden z-[40] ">
+        <div className="h-screen bg-slate-200">
           
           <div className="absolute bottom-0 left-0 right-0 z-[10]">
             <div className="mx-auto flex max-w-7xl items-end justify-between p-4 md:p-8">
@@ -191,7 +191,7 @@ const HeroPage = () => {
             </div>
           </div>
           
-        </section>
+        </div>
         <img
           className="pointer-events-none absolute left-0 top-0 h-36 w-auto rounded-xl border-2 border-slate-900 bg-slate-800 object-cover opacity-0"
           src="/imgs/active/1.jpg"
@@ -405,4 +405,4 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage;
+export default HeroPageNew;

@@ -84,7 +84,7 @@ const useGSAP = () => {
           {child}
         </span>
       ))}</span></h1>
-            <p className="text-white opacity-75 text-xl text-center">Lorem ipsum dolor sit amet consectetur </p>
+            <p className="text-white opacity-75 mt-2 text-xl text-center"> The Complete Line Production Services in Madhya Pradesh  </p>
         </div>
     </div>
   )

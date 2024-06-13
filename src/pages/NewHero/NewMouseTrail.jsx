@@ -53,7 +53,7 @@ export const NMOuseTrails = () => {
       
       </p>
             {isReadMoreOpen &&<p className={``}>Madhya Pradesh has emerged as a shooting friendly state for all kinds of filming activities . Our Madhya Pradesh government , administration and MP Tourism & Film board is very co-operative and supportive at every filming step . The government of Madhya Pradesh is also giving maximum subsidy benefits to filmmakers from all around INDIA for feature films , web-series , documentaries , TV-serials & web films .</p>}
-            <button onClick={()=>setIsReadMoreOpen(!isReadMoreOpen)} className="text-xl text-blue-500 hover:underline transition-all">{isReadMoreOpen ? 'Make Less':'Read More'}</button>
+           <p className="text-center"> <button onClick={()=>setIsReadMoreOpen(!isReadMoreOpen)} className="text-xl rounded-2xl bg-[#ED1C24] text-white w-32 h-12 hover:bg-white hover:text-[#ED1C24] transition-all">{isReadMoreOpen ? 'Make Less':'Read More'}</button></p>
             </div>
         </div>
     </MouseImageTrail>

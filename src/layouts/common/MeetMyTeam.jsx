@@ -27,10 +27,11 @@ const teamMembers = [
 
 const MeetMyTeam = () => {
   return (
+    <div className='w-full relative h-full bg-[#171717]'>
     <div className="container bg-[#171717] mx-auto p-8">
       <h1 className="text-2xl text-[#ED1C24] font-bold text-center mb-8">Expert Team</h1>
       <h2 className="text-6xl text-white text-center mb-12">Meet My Team</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-[#171717] border border-gray-500 p-6 rounded-lg shadow-lg text-center">
             <div className="overflow-hidden cursor-pointer rounded-lg mb-4">
@@ -49,6 +50,7 @@ const MeetMyTeam = () => {
           
         ))}
       </div>
+    </div>
     </div>
   );
 };

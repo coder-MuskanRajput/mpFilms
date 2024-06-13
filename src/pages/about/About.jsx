@@ -6,11 +6,13 @@ import MeetMyTeam from '../../layouts/common/MeetMyTeam'
 // import CoreTeam from './CoreTeam'
 import HeroPage from '../home/HeroPage'
 import AboutMe from '../home/AboutMe'
+import DudeAnimation from '../home/DudeAnimation'
 
 const About = () => {
   return (
     <div>
       <Banner/>
+      <DudeAnimation/>
     <HeroPage/>
     <AboutMe/>
 

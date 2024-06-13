@@ -60,7 +60,7 @@ const Slider = () => {
                 <p className="text-base">We've been helping businesses do their best since 2018</p>
 
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-[60px_auto_60px] [grid-template-areas:'slider_slider'_'nav-left_nav-right'] sm:[grid-template-areas:'nav-left_slider_nav-right'] gap-2 sm:gap-6">
-                    <button onClick={handlePrev} className="[grid-area:nav-left] text-2xl">
+                    <button onClick={handlePrev} className="[grid-area:nav-left] text-2xl -translate-x-1/2 md:translate-x-0">
                         <FontAwesomeIcon icon={faArrowLeft} />
                     </button>
                     <div id="slider" className="[grid-area:slider]">

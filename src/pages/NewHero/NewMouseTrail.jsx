@@ -1,5 +1,5 @@
 import { useAnimate } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FiMousePointer } from "react-icons/fi";
 import casting from '../../assets/casting.png'
 import casting1 from '../../assets/casting1.jpg'
@@ -16,6 +16,7 @@ import NewHomePage from "./NewHomePage";
 
 
 export const NMOuseTrails = () => {
+  const [isReadMoreOpen, setIsReadMoreOpen] = useState(false)
   return (
     <MouseImageTrail
       renderImageBuffer={50}
@@ -34,22 +35,25 @@ export const NMOuseTrails = () => {
         filming3,
       ]}
     >
-      <div className='flex flex-col p-12 justify-between gap-5 items-center bg-[#101010]'>
-            <h1 className='text-7xl font-bold text-red-500 uppercase'>{'About MP Films'.split("").map((child, idx) => (
+      <div className='flex flex-col md:p-12 p-5 justify-between gap-5 text-center items-center bg-[#101010]'>
+            <h1 className='md:text-7xl text-5xl font-bold text-red-500 uppercase'>{'About MP Films'.split("").map((child, idx) => (
         <span className='hoverText' key={idx}>
           {child}
         </span>
       ))}
             </h1>
-            <img src="https://pbs.twimg.com/media/EIQwL7QXsAAbH7S?format=jpg&name=medium" className='w-[80%] object-center pointer-events-none aspect-video object-cover rounded-xl ' alt="" />
-            <div className='text-lg text-gray-200 w-[70%] text-center flex flex-col gap-4 '>
+            <img src="https://pbs.twimg.com/media/EIQwL7QXsAAbH7S?format=jpg&name=medium" className='w-[80%] object-center  pointer-events-none aspect-video object-cover rounded-xl ' alt="" />
+            <div className='md:text-lg text-sm text-gray-200 w-full sm:w-[70%] text-center flex flex-col gap-4 '>
 
             <p className="transition-all">{'MP Films has multiple , rich shotting locations an ultimate mixture of Wildlife, Leisure and Heritage . The Wide panorama of geographical variations , variety of heritage assets , lively urban locals , peaceful Ghats , exposure to world heritage sites coupled with th ease on procedures required to fulfill the shooting formalities have been some of the key factors that have raised Madhya Pradesh among the top-shooting destinations . Here are some top cities from the wishlist of renowned directors - Bhopal , Indore , Gwalior, Jabalpur, Chhatarpur , Chhindwara , Maheshwar , Omkarehwar , Ujjain , Hoshangabad , Panna , Bundlekhand , Bhedaghat , Mandu , Orchha , Pachmarhi ..'.split("").map((child, idx) => (
         <span className='hoverText' key={idx}>
           {child}
         </span>
-      ))}</p>
-            <p>Madhya Pradesh has emerged as a shooting friendly state for all kinds of filming activities . Our Madhya Pradesh government , administration and MP Tourism & Film board is very co-operative and supportive at every filming step . The government of Madhya Pradesh is also giving maximum subsidy benefits to filmmakers from all around INDIA for feature films , web-series , documentaries , TV-serials & web films .</p>
+      ))}
+      
+      </p>
+            {isReadMoreOpen &&<p className={``}>Madhya Pradesh has emerged as a shooting friendly state for all kinds of filming activities . Our Madhya Pradesh government , administration and MP Tourism & Film board is very co-operative and supportive at every filming step . The government of Madhya Pradesh is also giving maximum subsidy benefits to filmmakers from all around INDIA for feature films , web-series , documentaries , TV-serials & web films .</p>}
+            <button onClick={()=>setIsReadMoreOpen(!isReadMoreOpen)} className="text-xl text-blue-500 hover:underline transition-all">{isReadMoreOpen ? 'Make Less':'Read More'}</button>
             </div>
         </div>
     </MouseImageTrail>

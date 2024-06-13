@@ -34,11 +34,11 @@ const Anim2 = ({slides}) => {
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className={`slide-wrapper ${index === currentSlide ? 'active' : ''} g-blur`}
-                    style={{ zIndex: slides.length - index, backgroundImage: `url(${slide.bgImg})` }}
+                    className={`slide-wrapper ${index === currentSlide ? 'active' : ''} g-blur bg-[#101010]`}
+                    style={{ zIndex: slides.length - index, backgroundImage: `url(${''})` }}
 
                 >
-                    <div className="slide-inner g-blur"
+                    <div className="slide-inner g-blur bg-[#101010]"
                     style={{ zIndex: slides.length - index, backgroundImage: `url(${slide.bgImg})`, backgroundSize:'contain', backgroundPositionX:'80%', backgroundRepeat:'no-repeat' }}
 
                     >

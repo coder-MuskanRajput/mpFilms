@@ -64,7 +64,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden w-[70%] mx-auto aspect-video bg-[#D8BD76] py-8">
+    <div className="relative overflow-hidden md:w-[70%] w-full mx-auto aspect-video bg-[#D8BD76] py-8">
       <motion.div
         drag="x"
         dragConstraints={{

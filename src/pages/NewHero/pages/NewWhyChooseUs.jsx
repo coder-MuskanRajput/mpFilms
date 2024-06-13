@@ -12,7 +12,7 @@ const NewWhyChooseUs = () => {
     ]
   return (
     <div className='flex gap-6 p-12 flex-col items-center bg-[#D8BD76]'>
-<h1 className='text-7xl font-bold text-red-500 uppercase'>{'WHY CHOOSE US?'.split("").map((child, idx) => (
+<h1 className='md:text-7xl sm:text-6xl text-5xl text-center font-bold text-red-500 uppercase'>{'WHY CHOOSE US?'.split("").map((child, idx) => (
         <span className='hoverText' key={idx}>
           {child}
         </span>

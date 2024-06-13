@@ -60,22 +60,23 @@ const useGSAP = () => {
  
   return (
     <div className='w-full h-screen relative bg-[#101010] grid grid-flow-row grid-rows-3 overflow-x-hidden'>
-        <div className=' flex flex-wrap gap-3 items-baseline p-5 overflow-hidden'>
-            <img  src="https://goingbionic.com/wp-content/uploads/2017/03/film-production-on-set.jpg" className='dot h-28 rounded-2xl object-cover w-[300px]' alt="" />
-            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" className='dot h-44 rounded-2xl w-fit object-cover'  alt="" />
-            <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Screen-Shot-2020-01-14-at-6.04.40-PM.png" className='dot w-56 object-cover rounded-2xl' alt="" />
+        <div className=' gap-3 items-baseline p-5 overflow-hidden grid grid-cols-3'>
+            <img  src="https://goingbionic.com/wp-content/uploads/2017/03/film-production-on-set.jpg" className='dot max-h-28 rounded-2xl object-cover mx-w-[300px]' alt="" />
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" className='dot max-h-44 rounded-2xl w-fit object-cover'  alt="" />
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Screen-Shot-2020-01-14-at-6.04.40-PM.png" className='dot max-w-56 object-cover rounded-2xl' alt="" />
         </div> 
-        <div className=' flex flex-wrap gap-3 items-baseline p-5 overflow-hidden'>
-        <img src="https://4.imimg.com/data4/LD/KW/MY-10072209/shooting-services-500x500.jpg" className='dot h-48 aspect-video rounded-2xl w-fit object-cover'  alt="" />
-        <img src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/12/og-for-Iconic-Shooting-Locations-To-Explore-In-India.jpg" className='dot h-48 object-cover w-fit rounded-2xl' alt="" />
+        <div className='grid grid-cols-2 gap-3 items-baseline p-5 overflow-hidden'>
+        <img src="https://4.imimg.com/data4/LD/KW/MY-10072209/shooting-services-500x500.jpg" className='dot max-h-48 aspect-video rounded-2xl w-fit object-cover'  alt="" />
+        <img src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/12/og-for-Iconic-Shooting-Locations-To-Explore-In-India.jpg" className='dot max-h-48 object-cover w-fit rounded-2xl' alt="" />
         </div>
-        <div className=' flex flex-wrap gap-3 items-baseline p-5 overflow-hidden'>
-        <img  src="https://goingbionic.com/wp-content/uploads/2017/03/film-production-on-set.jpg" className='dot h-28 rounded-2xl object-cover w-[300px]' alt="" />
-            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" className='dot h-44 rounded-2xl w-fit object-cover'  alt="" />
-            <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Screen-Shot-2020-01-14-at-6.04.40-PM.png" className='dot w-56 object-cover rounded-2xl' alt="" />
+        <div className='grid grid-cols-3 gap-3 items-baseline p-5 overflow-hidden'>
+        <img  src="https://goingbionic.com/wp-content/uploads/2017/03/film-production-on-set.jpg" className='dot max-h-28 rounded-2xl object-cover max-w-[300px]' alt="" />
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/03/shutterstock_226081837.jpg" className='dot max-h-44 rounded-2xl w-fit object-cover'  alt="" />
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2020/01/Screen-Shot-2020-01-14-at-6.04.40-PM.png" className='dot max-w-56 object-cover rounded-2xl' alt="" />
         </div>
-        <div  className="w-full h-full absolute top-0 left-0 flex items-center justify-center">
-            <h1 className="text-9xl text-white font-bold"><span className="text-red-600">MP</span> <span className="text-blue-500">FILMS</span></h1>
+        <div  className="w-full h-full g2-blur absolute top-0 left-0 flex flex-col items-center justify-center">
+            <h1 className="sm:text-9xl text-7xl text-white font-bold text-center"><span className="text-red-600">MP</span> <span className="text-blue-500">FILMS</span></h1>
+            <p className="text-white opacity-75 text-xl text-center">Lorem ipsum dolor sit amet consectetur </p>
         </div>
     </div>
   )

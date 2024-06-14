@@ -1,4 +1,3 @@
-/* src/DudeAnimation.css */
 html, body {
     margin: 0;
     padding: 0;
@@ -41,14 +40,6 @@ svg {
     justify-content: center;
     font-family: sans-serif;
  }
-/* .first{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://m.media-amazon.com/images/I/91TtGGA+AeL.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 .mp {
     font-size: 100px;
     font-weight: bold;

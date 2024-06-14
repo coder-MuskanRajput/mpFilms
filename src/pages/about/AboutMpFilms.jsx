@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import mp from "../../assets/mp.png"
-// import IndiaMap from './IndiaMap'; // Assume you have a component or image for the map
 
 const AboutMpFilms = () => {
   return (

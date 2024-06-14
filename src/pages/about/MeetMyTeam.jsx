@@ -5,7 +5,6 @@ const teamMembers = [
   {
     name: "Rohit Tiwari",
     description: "He has lived and worked in Mumbai and brings an iimmense knowledge of film making with a new perspective to mp films . He is responsiblefor adding mutiple in-house services to mp films like base management, filming locations, crew etc. ",
-    // contact: "john@example.com",
     image: "https://faime-next.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdirector1.66bd9a7a.jpg&w=384&q=75"
   },
   {

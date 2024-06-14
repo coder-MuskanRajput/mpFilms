@@ -19,7 +19,7 @@ const Anim2 = ({slides}) => {
     useEffect(() => {
         const slideInterval = setInterval(() => {
             updateSlide((currentSlide + 1) % slides.length);
-        }, 5000); // Change slide every 5 seconds
+        }, 3000); // Change slide every 5 seconds
 
         return () => clearInterval(slideInterval);
     }, [currentSlide]);

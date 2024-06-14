@@ -181,7 +181,7 @@ const TextParallaxContentExample = () => {
         </div>
         
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 bg-red-100 max-w-[500px] w-full mx-auto mb-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[500px] w-full mx-auto mb-5">
         <img src={EkDujheKeVaste} alt="Ek Dujhe Ke Vaste" className="w-full h-32 object-cover" />
         <img src={LifeNavrangi} alt="Life Navrangi" className="w-full h-32 object-cover" />
         <img src={Online24} alt="Online 24" className="w-full h-32 object-cover" />

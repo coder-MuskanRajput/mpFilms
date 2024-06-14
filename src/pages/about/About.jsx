@@ -1,25 +1,18 @@
 import React from 'react'
 import Banner from '../../layouts/common/Banner'
-import AboutMpFilms from './AboutMpFilms'
-import WhyChooseUs from './WhyChooseUs'
-import MeetMyTeam from '../../layouts/common/MeetMyTeam'
-// import CoreTeam from './CoreTeam'
-import HeroPage from '../home/HeroPage'
-import AboutMe from '../home/AboutMe'
-import DudeAnimation from '../home/DudeAnimation'
+import AboutMe from './AboutMe'
+import AboutDescription from './AboutDescription'
+import DudeAnimation from './DudeAnimation'
+import MeetMyTeam from './MeetMyTeam'
 
 const About = () => {
   return (
     <div>
       <Banner/>
       <DudeAnimation/>
-    <HeroPage/>
-    <AboutMe/>
-
-      {/* <AboutMpFilms/> */}
-      {/* <WhyChooseUs/> */}
+      <AboutMe/>
+      <AboutDescription/>
       <MeetMyTeam/>
-      {/* <CoreTeam/> */}
     </div>
   )
 }

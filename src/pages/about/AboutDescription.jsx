@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AboutMe = () => {
+const AboutDescription = () => {
     return (
         <div className="flex relative flex-col md:flex-row items-center justify-center min-h-screen bg-[#171717] p-4">
             <motion.div
@@ -40,4 +40,4 @@ I founded MP Films to bring high-quality production to Madhya Pradesh, leading n
     );
 };
 
-export default AboutMe;
+export default AboutDescription;

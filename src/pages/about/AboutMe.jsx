@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const HeroPage = () => {
+const AboutMe = () => {
     const ourEmplyee = [
         {
             work: "I'M Line Producer",
@@ -89,4 +89,4 @@ const HeroPage = () => {
     );
 }
 
-export default HeroPage;
+export default AboutMe;

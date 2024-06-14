@@ -12,7 +12,6 @@ import crew1 from '../../assets/crew1.JPG'
 import crew2 from '../../assets/crew2.JPG'
 import crew3 from '../../assets/crew3.JPG'
 import crew4 from '../../assets/crew4.JPG'
-import NewHomePage from "./NewHomePage";
 
 
 export const NMOuseTrails = () => {

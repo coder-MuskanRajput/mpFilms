@@ -1,33 +1,44 @@
 import React from 'react'
+import N_Hero from './N_Hero'
 import Anim2 from './Anime2'
-import HeroPage from './HeroPage'
-// import Feedback from './Feedback'
-import AboutMe from './AboutMe'
-import AboutMpFilms from '../about/AboutMpFilms'
-import WhyChooseUs from '../about/WhyChooseUs'
-import DudeAnimation from './DudeAnimation'
+import { NMOuseTrails } from './NewMouseTrail'
+import NewWhyChooseUs from './NewWhyChooseUs'
+import { SwipeCarousel } from './ImageCrasosal'
 import Slider from './Slider'
-import TrailImages from '../anim/ImageTrail'
-import HeroPageNew from '../hero/HeroPageNew'
-// import MeetMyTeam from '../../layouts/common/MeetMyTeam'
 
 const Home = ({slides}) => {
+    
   return (
-    <>
-    {/* <HeroPage/> */}
-    {/* <AboutMe/> */}
-      {/* <TrailImages/> */}
-      
-    <HeroPageNew/>
-    <DudeAnimation/>
-      <Anim2 slides={slides}/> 
-      <AboutMpFilms/>
-      <WhyChooseUs/>
+    <div>
 
-      {/* <MeetMyTeam/>  */}
-      <Slider/>
-    </>
+        {/* Main Hero Page */}
+
+        <N_Hero/>
+
+        {/* Slides */}
+
+        <Anim2 slides={slides}/> 
+
+        {/* About Mp Films Section */}
+
+        <NMOuseTrails/>
+
+         {/* Shooting Images Carousel */}
+
+        <div className='bg-[#D8BD76]'>
+        <SwipeCarousel/>
+        </div>
+
+        {/* Why Choose Us */}
+
+        <NewWhyChooseUs/>
+
+        {/* Customer Feedback */}
+
+        <Slider/>
+
+    </div>
   )
 }
 
-export default Home
+export default Home;

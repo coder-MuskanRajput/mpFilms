@@ -155,6 +155,9 @@ const TextParallaxContentExample = () => {
           images={[Online24, Sajish, jnu, JanniEkKahani, EkDujheKeVaste, KayamatSeKayamatTk]}
         />
       </TextParallaxContent>
+      <div>
+
+      
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
         <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
           Advertisement & Audition
@@ -176,7 +179,9 @@ const TextParallaxContentExample = () => {
           <i className="ri-check-double-fill"></i><span className="font-bold text-xl md:text-2xl text-neutral-600">Kokila Bhen Hospital</span>
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 bg-red-100 max-w-[500px] w-full mx-auto mb-5">
         <img src={EkDujheKeVaste} alt="Ek Dujhe Ke Vaste" className="w-full h-32 object-cover" />
         <img src={LifeNavrangi} alt="Life Navrangi" className="w-full h-32 object-cover" />
         <img src={Online24} alt="Online 24" className="w-full h-32 object-cover" />
@@ -184,7 +189,6 @@ const TextParallaxContentExample = () => {
         <img src={jnu} alt="JNU" className="w-full h-32 object-cover" />
         <img src={JanniEkKahani} alt="Janni Ek Kahani" className="w-full h-32 object-cover" />
       </div>
-
       </div>
     </div>
   );

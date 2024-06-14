@@ -297,8 +297,8 @@ const DudeAnimation = () => {
                 </div>
                 <div className="content-section"></div>
             </div>
-            <div className="animation-container flex flex-row gap-2 items-start">
-                <svg className="" viewBox="0 -10 315 350">
+            <div className="animation-container flex flex-row gap-2 items-start w-full justify-start">
+                <svg className="w-fit" viewBox="0 -10 315 350">
                     <g className="dude" stroke="white" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" fill="none">
                         <g className="leg">
                             <path className="leg-bottom" d="M182,317l-10.4-2.8c-2.7-0.7-4.5-3.2-4.4-6c1.7-13,3-27,3.7-42.1c0.8-16.5,0.7-32,0.1-46.1"/>

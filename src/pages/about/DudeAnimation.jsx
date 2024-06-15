@@ -270,29 +270,45 @@ const DudeAnimation = () => {
                 <div className="content-section first">
 
                     <div>
-                        <h1 className=" mp text-9xl z-10 text-white">MP FILMS</h1>
+                        <h1 className=" mp  z-10 text-white">MP FILMS</h1>
                         <p className="arrow-animated z-10 text-white">↓</p>
                     </div>
                 </div>
                 <div className="content-section">
                     <div>
-                        <h1>What's this?</h1>
-                        <p>
-                            That's <a href="https://twitter.com/uuuuuulala" target="_blank" rel="noopener noreferrer">me</a> learning
-                            the basic walk cycle animation and playing with the GSAP implementation&nbsp;of&nbsp;it.
-                        </p>
+                        <h1 className="text-white text-3xl mt-12">As a Head Production!!</h1>
+                        <p className="font-bold mt-8"><i className="ri-check-double-fill"></i>   LSD (Feature Film)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>  EK Kiran Roshni ki (DD National)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>  Mangalsutra Ek Maryada (DD National)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Bani Ishq Da Kalma (Colors Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   Savdhan India (Life Ok)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>  Maharana Pratap (Sony Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Code Red (Colour Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>  Fear Files (Zee Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>  Crime Petrol (Sony Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   Mann Mein Vishwas (Sony Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   Detective Didi (Zee Tv)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   Ishqbaaz (Star plus)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   Dil Toh Happy Hai ji (Star Plus)</p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i>   F for Fantasy (Voot)</p>
                     </div>
                 </div>
                 <div className="content-section">
                     <div>
-                        <h1>So what?</h1>
-                        <p>
-                            You can use this code and design concept for your project.
-                            The animation parameters are easy to tweak, graphic elements can be replaced.
-                        </p>
-                        <p>
-                            You can also give me a follow on <a href="https://www.linkedin.com/in/ksenia-kondrashova/" target="_blank" rel="noopener noreferrer">linkedin</a>, <a href="https://codepen.io/ksenia-k" target="_blank" rel="noopener noreferrer">codepen</a> and <a href="https://twitter.com/uuuuuulala" target="_top">twitter</a> :)
-                        </p>
+                        <h1 className="text-white text-3xl mt-12">As a  Line Producer </h1>
+                            
+                        <p className="font-bold mt-8"><i className="ri-check-double-fill"></i> Ek Dujhe Ke Vaste  Season2 </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Farihaa  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Life Navrangi  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Rock Shelter (Discovery Show)  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Acharva Chhathi Maayi ke  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Online 24X7  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Saajish  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> The Narmada Story  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> JNU  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Janni Ek Kahani  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Qyamat se Qyamat Tak  </p>
+                        <p className="font-bold mt-1"><i className="ri-check-double-fill"></i> Pyar Kroge Pyar Milega </p>
                     </div>
                 </div>
                 <div className="content-section"></div>

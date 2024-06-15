@@ -8,13 +8,13 @@ const reviews = [
         id: 1,
         avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_dNKmk5idziwPzIR--pk5zHsTMkKcyGgBA&s",
         role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit soluta fugiat et deserunt, sit consequatur rerum possimus ab hic ipsa quisquam repudiandae, molestias facilis consectetur odio. Illum, magnam commodi?',
-        name: "Rohit Muley"
+        name: "Ritesh Modi"
     },
     {
         id: 2,
-        avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_dNKmk5idziwPzIR--pk5zHsTMkKcyGgBA&s",
+        avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEL8mVQcZIKu4bvR8lmXKRLNHRwpvnKaiXKQ&s",
         role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit soluta fugiat et deserunt, sit consequatur rerum possimus ab hic ipsa quisquam repudiandae, molestias facilis consectetur odio. Illum, magnam commodi?',
-        name: "Abhishek B Jain"
+        name: "Mautik Tolia"
     },
     {
         id: 3,
@@ -34,12 +34,7 @@ const reviews = [
         role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit soluta fugiat et deserunt, sit consequatur rerum possimus ab hic ipsa quisquam repudiandae, molestias facilis consectetur odio. Illum, magnam commodi?',
         name: "Abhishek B Jain"
     },
-    {
-        id: 6,
-        avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_dNKmk5idziwPzIR--pk5zHsTMkKcyGgBA&s",
-        role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit soluta fugiat et deserunt, sit consequatur rerum possimus ab hic ipsa quisquam repudiandae, molestias facilis consectetur odio. Illum, magnam commodi?',
-        name: "Rashmi Khandelwal"
-    }
+    
 ];
 
 const Slider = () => {
@@ -57,7 +52,7 @@ const Slider = () => {
         <div className="bg-[#171717] flex flex-col justify-center items-center min-h-screen relative px-4">
             <main className="bg-[#c3c2c2] my-4 w-full h-full max-h-3xl max-w-3xl rounded-3xl text-center p-8 sm:p-16">
                 <h1 className="text-4xl mb-5 font-bold">Customer's Feedback</h1>
-                <p className="text-base">We've been helping businesses do their best since 2018</p>
+                {/* <p className="text-base">We've been helping businesses do their best since 2018</p> */}
 
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-[60px_auto_60px] [grid-template-areas:'slider_slider'_'nav-left_nav-right'] sm:[grid-template-areas:'nav-left_slider_nav-right'] gap-2 sm:gap-6">
                     <button onClick={handlePrev} className="[grid-area:nav-left] text-2xl -translate-x-1/2 md:translate-x-0">

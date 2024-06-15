@@ -7,6 +7,47 @@ import Sajish from '../../assets/Sajish.jpeg';
 import jnu from '../../assets/Jnu.jpeg';
 import JanniEkKahani from '../../assets/JanniEkKahani.jpeg';
 import KayamatSeKayamatTk from '../../assets/KayamatSeKayamatTk.jpeg';
+import Ek_One from "../../assets/Ek_One.JPG"
+import Ek_Two from "../../assets/Ek_Two.JPG"
+import Ek_Three from "../../assets/Ek_Three.JPG"
+import Ek_Four from "../../assets/Ek_Four.JPG"
+import Ek_Five from "../../assets/Ek_Five.JPG"
+import Ek_Six from "../../assets/Ek_Six.JPG"
+import F_One from "../../assets/F_One.JPG"
+import F_Two from "../../assets/F_Two.JPG"
+import F_Three from "../../assets/F_Three.JPG"
+import F_Four from "../../assets/F_Four.JPG"
+import LifeNavrangi1 from "../../assets/LifeNavrangi1.JPG"
+import LifeNavrangi2 from "../../assets/LifeNavrangi2.JPG"
+import LifeNavrangi3 from "../../assets/LifeNavrangi3.JPG"
+import LifeNavrangi4 from "../../assets/LifeNavrangi4.JPG"
+import Online1 from "../../assets/Online1.jpg"
+import Online2 from "../../assets/Online2.jpg"
+import Online3 from "../../assets/Online3.jpg"
+import Online4 from "../../assets/Online4.jpg"
+import S1 from "../../assets/S1.JPG"
+import S2 from "../../assets/S2.JPG"
+import S3 from "../../assets/S3.JPG"
+import S4 from "../../assets/S4.JPG"
+import jnu1 from "../../assets/jnu1.jpg"
+import jnu2 from "../../assets/jnu2.jpg"
+import jnu3 from "../../assets/jnu3.jpg"
+import jnu4 from "../../assets/jnu4.jpg"
+import J1 from "../../assets/J1.JPG"
+import J2 from "../../assets/J2.JPG"
+import J3 from "../../assets/J3.JPG"
+import J4 from "../../assets/J4.JPG"
+import K1 from "../../assets/K1.JPG"
+import K2 from "../../assets/K2.JPG"
+import K3 from "../../assets/K3.JPG"
+import K4 from "../../assets/K4.JPG"
+import fARIHA from "../../assets/fARIHA.JPG"
+import Big from "../../assets/Big.JPG"
+import Indian from "../../assets/Indian.JPG"
+import Kbc from "../../assets/Kbc.JPG"
+import ladli from "../../assets/ladli.jpg"
+import kokila from "../../assets/kokila.JPG"
+
 
 const TextParallaxContentExample = () => {
   return (
@@ -20,11 +61,11 @@ const TextParallaxContentExample = () => {
           title="EK DUJHE KE VASTE SEASON 2"
           Staring="Mohit Kumar, Kanika Kupar, Akshay Anand"
           production="Studio Next"
-          images={[EkDujheKeVaste, LifeNavrangi, Online24, Sajish, jnu, JanniEkKahani]}
+          images={[Ek_One, Ek_Two, Ek_Three, Ek_Four]}
         />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl=""
+        imgUrl={fARIHA}
         subheading="Directed By"
         heading="Aayushh Shrivastava"
       >
@@ -32,7 +73,7 @@ const TextParallaxContentExample = () => {
           title="FARIHAA"
           Staring="Subuhi Joshi, Himani Sahani, Yash Sharda"
           production="SGN Films"
-          images={[KayamatSeKayamatTk, Online24, Sajish, jnu, JanniEkKahani, EkDujheKeVaste]}
+          images={[F_One, F_Two, F_Three, F_Four]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -44,11 +85,11 @@ const TextParallaxContentExample = () => {
           title="LIFE NAVRANGI"
           Staring="Amir Ali, Tiku Talsania, Krishna Mukherjee, Swaroopa Gosh"
           production="BhodhiTree, BBC Media"
-          images={[LifeNavrangi, EkDujheKeVaste, KayamatSeKayamatTk, Online24, Sajish, jnu]}
+          images={[LifeNavrangi1, LifeNavrangi2, LifeNavrangi3, LifeNavrangi4]}
         />
       </TextParallaxContent>
       <TextParallaxContent
-        imgUrl=""
+        imgUrl="https://thumbs.dreamstime.com/b/pandav-caves-pachmarhi-five-dwellings-excavated-sandstone-rock-low-hill-madhya-pradesh-india-asia-58150466.jpg"
         subheading="Discovery Show"
         heading="Documentary"
       >
@@ -56,7 +97,7 @@ const TextParallaxContentExample = () => {
           title="ROCK SHELTER (DISCOVERY SHOW)"
           Staring="Documentary"
           production="The Salt Media"
-          images={[JanniEkKahani, KayamatSeKayamatTk, Online24, Sajish, jnu, EkDujheKeVaste]}
+          images={["https://travelwithbiker.com/wp-content/uploads/2021/09/GOPR5619-1024x768.jpg"]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -68,7 +109,7 @@ const TextParallaxContentExample = () => {
           title="ACHARVA CHHATHI MAAYI KE"
           Staring="Purvi Mishra, Aishana Singh, Ashok Kumar Jha"
           production="The Cinema Makers"
-          images={[jnu, EkDujheKeVaste, JanniEkKahani, KayamatSeKayamatTk, Online24, Sajish]}
+          images={["https://staticimg.amarujala.com/assets/images/2023/11/17/chhatha-paja_1700205382.jpeg?w=750","https://thumbs.dreamstime.com/b/th-october-kolkata-west-bengal-india-woman-praying-to-god-sun-babu-ghat-chhath-puja-283140788.jpg"]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -80,7 +121,7 @@ const TextParallaxContentExample = () => {
           title="ONLINE 24X7"
           Staring="Ahem Sharma, Brijendra Kala, Abhimanyu Singh, Rajesh Sharma, Zarina Wahb"
           production="Ocean Fantasy Events"
-          images={[Online24, Sajish, jnu, JanniEkKahani, EkDujheKeVaste, LifeNavrangi]}
+          images={[Online1, Online2, Online3, Online4,]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -92,7 +133,7 @@ const TextParallaxContentExample = () => {
           title="SAAJISH"
           Staring="Milind Gunaji, Kanchi Singh, Mugdha Godse, Dev, Raza Murad"
           production="Trident Films"
-          images={[Sajish, jnu, JanniEkKahani, EkDujheKeVaste, LifeNavrangi, Online24]}
+          images={[S1,S2, S3, S4]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -104,7 +145,7 @@ const TextParallaxContentExample = () => {
           title="THE NARMADA STORY"
           Staring="Raghubir Tiwari, Mukesh Tiwari, Divya Dutta, Ishtiyak Khan"
           production="AB Infosoft Creation"
-          images={[jnu, JanniEkKahani, KayamatSeKayamatTk, Online24, Sajish, EkDujheKeVaste]}
+          images={["https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2024/06/05/202406053171150.jpeg?quality=80&zoom=1&ssl=1","https://static.tnn.in/thumb/msid-110387480,thumbsize-78652,width-1280,height-720,resizemode-75/110387480.jpg"]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -116,7 +157,7 @@ const TextParallaxContentExample = () => {
           title="JNU"
           Staring="Urvashi Rautela, Siddharth Bodek, Ravi Kishan, Piyush Mishra, Vijay Raaz"
           production="The Big Daddy"
-          images={[jnu, KayamatSeKayamatTk, Online24, Sajish, JanniEkKahani, EkDujheKeVaste]}
+          images={[jnu1 , jnu2 , jnu3 , jnu4]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -128,7 +169,7 @@ const TextParallaxContentExample = () => {
           title="JANNI EK KAHANI"
           Staring="Prapti Shukla, Mouli Ganguly, Sumit Kaul"
           production="Mrinal Abhigyan Jha"
-          images={[JanniEkKahani, KayamatSeKayamatTk, Online24, Sajish, jnu, EkDujheKeVaste]}
+          images={[J1,J2,J3,J4]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -140,7 +181,7 @@ const TextParallaxContentExample = () => {
           title="QYAMAT SE QYAMAT TAK"
           Staring="Karam Rajpal, Trupti Mishra, Gaurav Sharma"
           production="BBC, Coiosecum"
-          images={[KayamatSeKayamatTk, Online24, Sajish, jnu, JanniEkKahani, EkDujheKeVaste]}
+          images={[K1,K2,K3,K4]}
         />
       </TextParallaxContent>
       <TextParallaxContent
@@ -163,6 +204,10 @@ const TextParallaxContentExample = () => {
           Advertisement & Audition
         </h2>
         <div className="col-span-1 md:col-span-8">
+        <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+          <i className="ri-check-double-fill"></i><span className="font-bold text-xl md:text-2xl text-neutral-600">Big Picture</span>            
+          </p>
+
           <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
           <i className="ri-check-double-fill"></i><span className="font-bold text-xl md:text-2xl text-neutral-600">Indian Idol</span>            
           </p>
@@ -182,12 +227,12 @@ const TextParallaxContentExample = () => {
         
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[500px] w-full mx-auto mb-5">
-        <img src={EkDujheKeVaste} alt="Ek Dujhe Ke Vaste" className="w-full h-32 object-cover" />
-        <img src={LifeNavrangi} alt="Life Navrangi" className="w-full h-32 object-cover" />
-        <img src={Online24} alt="Online 24" className="w-full h-32 object-cover" />
-        <img src={Sajish} alt="Sajish" className="w-full h-32 object-cover" />
-        <img src={jnu} alt="JNU" className="w-full h-32 object-cover" />
-        <img src={JanniEkKahani} alt="Janni Ek Kahani" className="w-full h-32 object-cover" />
+        <img src={Big} alt="Big" className="w-full h-32 object-cover" />
+        <img src={Indian} alt="Indian" className="w-full h-32 object-cover" />
+        <img src={Kbc} alt="kbc" className="w-full h-32 object-cover" />
+        <img src="https://images.indianexpress.com/2020/05/coronavirus-shooting-759.jpeg" alt="master" className="w-full h-32 object-cover" />
+        <img src={ladli} alt="ladli" className="w-full h-32 object-cover" />
+        <img src={kokila} alt="kokila" className="w-full h-32 object-cover" />
       </div>
       </div>
     </div>

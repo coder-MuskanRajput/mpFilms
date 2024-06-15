@@ -35,7 +35,7 @@ export const NMOuseTrails = () => {
       ]}
     >
       <div className='flex flex-col md:p-12 p-5 justify-between gap-5 text-center items-center bg-[#101010]'>
-            <h1 className='md:text-7xl text-5xl font-bold text-red-500 uppercase'>{'About MP Films'.split("").map((child, idx) => (
+            <h1 className='md:text-6xl text-5xl font-bold text-red-500 uppercase'>{'About MP Films'.split("").map((child, idx) => (
         <span className='hoverText' key={idx}>
           {child}
         </span>
@@ -44,7 +44,7 @@ export const NMOuseTrails = () => {
             <img src="https://pbs.twimg.com/media/EIQwL7QXsAAbH7S?format=jpg&name=medium" className='w-[80%] object-center  pointer-events-none aspect-video object-cover rounded-xl ' alt="" />
             <div className='md:text-lg text-sm text-gray-200 w-full sm:w-[70%] text-center flex flex-col gap-4 '>
 
-            <p className="transition-all">{'MP Films has multiple , rich shotting locations an ultimate mixture of Wildlife, Leisure and Heritage . The Wide panorama of geographical variations , variety of heritage assets , lively urban locals , peaceful Ghats , exposure to world heritage sites coupled with th ease on procedures required to fulfill the shooting formalities have been some of the key factors that have raised Madhya Pradesh among the top-shooting destinations . Here are some top cities from the wishlist of renowned directors - Bhopal , Indore , Gwalior, Jabalpur, Chhatarpur , Chhindwara , Maheshwar , Omkarehwar , Ujjain , Hoshangabad , Panna , Bundlekhand , Bhedaghat , Mandu , Orchha , Pachmarhi ..'.split("").map((child, idx) => (
+            <p className="transition-all">{'MP Films has multiple , rich shooting locations an ultimate mixture of Wildlife, Leisure and Heritage . The Wide panorama of geographical variations , variety of heritage assets , lively urban locals , peaceful Ghats , exposure to world heritage sites coupled with th ease on procedures required to fulfill the shooting formalities have been some of the key factors that have raised Madhya Pradesh among the top-shooting destinations . Here are some top cities from the wishlist of renowned directors - Bhopal , Indore , Gwalior, Jabalpur, Chhatarpur , Chhindwara , Maheshwar , Omkarehwar , Ujjain , Hoshangabad , Panna , Bundlekhand , Bhedaghat , Mandu , Orchha , Pachmarhi ..'.split("").map((child, idx) => (
         <span className='hoverText' key={idx}>
           {child}
         </span>

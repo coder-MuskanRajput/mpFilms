@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 // import Anim2 from './layouts/Anime2'
 import Nav from './layouts/navbar/Nav'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Contact from './pages/contact/Contact'
 import Services from './pages/services/Services'
@@ -44,10 +44,14 @@ const slides = [
 ];
 
 const location = useLocation();
+const navigate = useNavigate();
 
 useEffect(() => {
   window.scrollTo(0,0)
-
+  console.log(location.pathname);
+   if(location.pathname === "/mpFilms/"){
+    navigate("/")
+   }
   return () => {
     
   }

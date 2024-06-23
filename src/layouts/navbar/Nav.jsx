@@ -27,11 +27,11 @@ const Nav = () => {
       </div>
       <nav className={`navbar fixed top-0 left-0 w-full h-full bg-[#171717] flex justify-center items-center transition-transform transform ${isNavOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:flex lg:translate-x-0 lg:flex-row`}>
         <ul className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
-          <li><Link to="/" className={`${location.pathname === '/' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Home</Link></li>
-          <li><Link to="/services" className={`${location.pathname === '/services' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Services</Link></li>
-          <li><Link to="/projects" className={`${location.pathname === '/projects' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Projects</Link></li>
-          <li><Link to="/about" className={`${location.pathname === '/about' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>About Us</Link></li>
-          <li><Link to="/contact" className={`${location.pathname === '/contact' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Contact</Link></li>
+          <li onClick={()=>setIsNavOpen(false)}><Link to="/" className={`${location.pathname === '/' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Home</Link></li>
+          <li onClick={()=>setIsNavOpen(false)}><Link to="/services" className={`${location.pathname === '/services' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Services</Link></li>
+          <li onClick={()=>setIsNavOpen(false)}><Link to="/projects" className={`${location.pathname === '/projects' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Projects</Link></li>
+          <li onClick={()=>setIsNavOpen(false)}><Link to="/about" className={`${location.pathname === '/about' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>About Us</Link></li>
+          <li onClick={()=>setIsNavOpen(false)}><Link to="/contact" className={`${location.pathname === '/contact' ? 'text-[#ED1C24]' : 'text-white'} text-xl lg:text-base uppercase`}>Contact</Link></li>
         </ul>
       </nav>
       <div className="lg:flex hidden">

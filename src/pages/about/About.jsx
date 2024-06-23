@@ -8,7 +8,7 @@ import MeetMyTeam from './MeetMyTeam'
 const About = () => {
   return (
     <div>
-      <Banner/>
+      {/* <Banner/> */}
       <DudeAnimation/>
       <AboutMe/>
       <AboutDescription/>

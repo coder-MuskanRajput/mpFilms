@@ -48,13 +48,6 @@ const navigate = useNavigate();
 
 useEffect(() => {
   window.scrollTo(0,0)
-  console.log(location.pathname);
-   if(location.pathname === "/mpFilms/"){
-    navigate("/")
-   }
-  return () => {
-    
-  }
 }, [location.pathname])
 
 
@@ -67,6 +60,7 @@ useEffect(() => {
       {/* <NMOuseTrails slides={slides}  /> */}
       <Routes>
         <Route path='/' element={<Home slides={slides} />}/>
+        <Route path='/mpFilms/' element={<Home slides={slides} />}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>}/>

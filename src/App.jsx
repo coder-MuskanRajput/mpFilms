@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import Anim2 from './layouts/Anime2'
 import Nav from './layouts/navbar/Nav'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
@@ -50,10 +50,27 @@ useEffect(() => {
   window.scrollTo(0,0)
 }, [location.pathname])
 
+const [scrollY, setScrollY] = useState(0);
+
+  // Update scrollY state on scroll
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  // Add event listener when component mounts
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
-    <>
-      <div className='sticky w-full top-0 left-0 z-[999]'>
+    <div className='w-full overflow-x-hidden'>
+      <div className={`${scrollY > 5 ? 'fixed':'sticky'} w-full top-0 left-0 z-[999]`}>
       <Nav/>
       </div>
       
@@ -68,7 +85,7 @@ useEffect(() => {
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 

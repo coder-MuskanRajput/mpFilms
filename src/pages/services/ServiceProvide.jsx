@@ -40,7 +40,7 @@ const ServiceProvider = () => {
     <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center p-5">
       <h1 className="text-4xl text-center text-white mb-20">We offer Line Production Services for all Projects</h1>
       <motion.div
-        className="flex flex-wrap pl-24 pr-24 justify-center gap-4"
+        className="flex flex-wrap md:pl-24 md:pr-24 sm:px-12 px-6 text-center justify-center gap-4"
         ref={ref}
         initial="hidden"
         animate={controls}
@@ -61,7 +61,7 @@ const ServiceProvider = () => {
             key={index}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.9 }}
-            className="gr-btn-wrapper border p-2 border-[#aaaaaa88] rounded-full"
+            className="gr-btn-wrapper md:text-xl text-xs sm:text-sm w-full sm:w-fit border p-2 border-[#aaaaaa88] rounded-full"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 }

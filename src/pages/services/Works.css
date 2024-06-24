@@ -17,7 +17,7 @@
   .full { 
     width: 100%; 
     display: table;
-    padding: 50px 0;
+    padding: 10px 0;
   }
   .half{
     flex: 1;

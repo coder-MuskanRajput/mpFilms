@@ -327,11 +327,11 @@ const ExampleContent = ({ title, Staring, production, images }) => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
         <span className="font-bold text-xl md:text-2xl text-black">Production</span> {production}
       </p>
-      {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <img key={index} src={image} alt={`image-${index}`} className="w-full h-32 object-cover" />
         ))}
-      </div> */}
+      </div>
     </div>
   </div>
 );

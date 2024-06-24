@@ -30,7 +30,7 @@ const Happy = () => {
   return (
     <div className="container ">
       <h1 className='text-5xl mb-10 text-[#ED1C24]'>Happy Clients</h1>
-      <p className='text-3xl'>We value our clients and their satisfaction is our priority.</p>
+      <p className='text-3xl text-black'>We value our clients and their satisfaction is our priority.</p>
       <div className="carousel">
         <div className="carousel-inner">
           {clients.map(client => (

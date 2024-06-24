@@ -8,9 +8,9 @@ import Services from './pages/services/Services'
 import Projects from './pages/projects/Projects'
 import About from './pages/about/About'
 import Footer from './layouts/common/Footer'
-import bgImg1 from "./assets/Sajish.jpeg"
-import bgimg2 from "./assets/Online24.jpeg"
-import bgimg3 from "./assets/LifeNavrangi.jpeg"
+import bgImg1 from "./assets/Sajish.webp"
+import bgimg2 from "./assets/Online24.webp"
+import bgimg3 from "./assets/LifeNavrangi.webp"
 
 const App = () => {
   

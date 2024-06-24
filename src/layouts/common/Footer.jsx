@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import logo from "../../assets/logo.png";
-import jnu from "../../assets/Jnu.jpeg"
-import janni from "../../assets/JanniEkKahani.jpeg";
-import ek from "../../assets/EkDujheKeVaste.jpeg";
-import kayamat from "../../assets/KayamatSeKayamatTk.jpeg";
-import sajish from "../../assets/Sajish.jpeg";
-import life from "../../assets/LifeNavrangi.jpeg";
+import jnu from "../../assets/Jnu.webp"
+import janni from "../../assets/JanniEkKahani.webp";
+import ek from "../../assets/EkDujheKeVaste.webp";
+import kayamat from "../../assets/KayamatSeKayamatTk.webp";
+import sajish from "../../assets/Sajish.webp";
+import life from "../../assets/LifeNavrangi.webp";
 import { Link } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
 

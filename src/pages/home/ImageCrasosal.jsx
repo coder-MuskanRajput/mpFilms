@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import casting1 from '../../assets/casting1.jpg'
-import filming2 from '../../assets/filming2.JPG'
-import filming1 from '../../assets/filming1.jpg'
-import filming3 from '../../assets/filming3.jpg'
-import crew1 from '../../assets/crew1.JPG'
-import crew2 from '../../assets/crew2.JPG'
-import crew3 from '../../assets/crew3.JPG'
-import crew4 from '../../assets/crew4.JPG'
+import casting1 from '../../assets/casting1.webp'
+import filming2 from '../../assets/filming2.webp'
+import filming1 from '../../assets/filming1.webp'
+import filming3 from '../../assets/filming3.webp'
+import crew1 from '../../assets/crew1.webp'
+import crew2 from '../../assets/crew2.webp'
+import crew3 from '../../assets/crew3.webp'
+import crew4 from '../../assets/crew4.webp'
 
 const imgs = [
     casting1,

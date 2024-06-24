@@ -296,15 +296,17 @@ const Works = () => {
         </section>
         
         {galleryOpen && (
-          <div className="gallery-overlay">
-            <div className="gallery-container">
-              <button className="close-button" onClick={closeGallery}>
+          <div className="w-full fixed h-screen g-blur top-0 left-0 z-30 flex items-center justify-center">
+            <div className="w-full max-w-screen-sm aspect-[2/1.5] bg-red-300">
+            <div className='w-full h-full relative'>
+              <img src={currentGallery[photoIndex]} alt="Gallery" className="w-full h-full object-cover object-center" />
+              <button className="absolute top-2 right-2" onClick={closeGallery}>
                 <FontAwesomeIcon icon={faTimesCircle} />
               </button>
+            </div>
               <button className="prev-button" onClick={prevImage}>
                 <FontAwesomeIcon icon={faArrowLeft} />
               </button>
-              <img src={currentGallery[photoIndex]} alt="Gallery" className="gallery-image" />
               <button className="next-button" onClick={nextImage}>
                 <FontAwesomeIcon icon={faArrowRight} />
               </button>

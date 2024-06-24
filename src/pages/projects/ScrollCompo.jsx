@@ -249,7 +249,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
         paddingRight: IMG_PADDING,
       }}
     >
-      <div className="relative h-[150vh]">
+      <div className="relative md:h-[100vh] h-fit">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
@@ -272,15 +272,13 @@ const StickyImage = ({ imgUrl }) => {
     <motion.div
       style={{
         backgroundImage: `url(${imgUrl})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top',
-        height: `calc(100vh)`,
+        backgroundSize: 'contain',
         backgroundColor:"#171717",
         top: IMG_PADDING,
         scale,
       }}
       ref={targetRef}
-      className="sticky z-0 overflow-hidden"
+      className="sticky z-0 overflow-hidden w-full md:w-11/12 mx-auto aspect-video rounded-md shadow-md border border-red-300"
     >
       <motion.div
         className="absolute inset-0 bg-neutral-950/70"
@@ -309,7 +307,7 @@ const OverlayCopy = ({ subheading, heading }) => {
         opacity,
       }}
       ref={targetRef}
-      className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
+      className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center text-white"
     >
       <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">{subheading}</p>
       <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
